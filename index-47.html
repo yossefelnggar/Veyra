@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#070625">
+<meta name="description" content="Veyra — اكتشف شيئًا جديدًا عن نفسك">
+<title>Veyra — اكتشف شيئًا جديدًا عن نفسك</title>
+<!-- غيّر veyra.app والصورة أدناه لدومينك الحقيقي بعد النشر -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Veyra">
+<meta property="og:title" content="Veyra — اكتشف شيئًا جديدًا عن نفسك">
+<meta property="og:description" content="اكتب اسمك واحصل على قراءة ترفيهية فريدة، ثم شارك النتيجة أو تحدَّ بها أصدقاءك.">
+<meta property="og:image" content="https://veyra.app/og-cover.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Veyra — اكتشف شيئًا جديدًا عن نفسك">
+<meta name="twitter:description" content="اكتب اسمك واحصل على قراءة ترفيهية فريدة، ثم شارك النتيجة أو تحدَّ بها أصدقاءك.">
+<meta name="twitter:image" content="https://veyra.app/og-cover.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<style>
+:root{--bg:#06051f;--panel:#121039cc;--panel2:#19144dcc;--line:#ffffff16;--text:#fff;--muted:#aaa6c8;--p:#7347ff;--pink:#d94cf3;--cyan:#49c9ff;--gold:#ffd267}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 80% 10%,#653bff30,transparent 30%),radial-gradient(circle at 10% 25%,#2bcaff13,transparent 25%),linear-gradient(135deg,#05041c,#0b0834 55%,#120a42);color:var(--text);font-family:Cairo,Inter,sans-serif;min-height:100vh;opacity:0;transition:opacity .45s ease}body.ready{opacity:1}#pageLoader{position:fixed;inset:0;z-index:999;display:flex;align-items:center;justify-content:center;background:#05041c;transition:opacity .4s ease,visibility .4s ease}#pageLoader.hide{opacity:0;visibility:hidden;pointer-events:none}#pageLoader .dot{width:10px;height:10px;border-radius:50%;background:linear-gradient(135deg,#6242ff,#db4bf2);margin:0 4px;animation:pulse 1s ease-in-out infinite}#pageLoader .dot:nth-child(2){animation-delay:.15s}#pageLoader .dot:nth-child(3){animation-delay:.3s}@keyframes pulse{0%,80%,100%{transform:scale(.6);opacity:.4}40%{transform:scale(1);opacity:1}}body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.28;background-image:radial-gradient(#fff 1px,transparent 1px);background-size:155px 155px}.wrap{width:min(1220px,calc(100% - 28px));margin:auto}button,input{font:inherit}button{cursor:pointer}.top{height:74px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between}.brand{display:flex;gap:9px;align-items:center;font-size:24px;font-weight:900}.mark{width:37px;height:37px;border-radius:12px;background:linear-gradient(135deg,#6242ff,#db4bf2);display:grid;place-items:center;box-shadow:0 10px 30px #7548ff55}.nav{display:flex;gap:28px;color:#d8d4e9;font-size:13px}.actions{display:flex;gap:8px}.ghost{background:#ffffff08;border:1px solid var(--line);color:#fff;border-radius:12px;padding:9px 13px}.primary{border:0;background:linear-gradient(100deg,#6945ff,#a23de9);color:#fff;border-radius:15px;padding:14px 18px;font-weight:900;box-shadow:0 14px 30px #7347ff38}.hero{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center;padding:65px 0 70px;direction:ltr}.hero>*{direction:rtl}.eyebrow{display:inline-flex;background:#7548ff18;border:1px solid #825dff44;border-radius:999px;padding:7px 12px;color:#d8d0ff;font-size:11px}.hero h1{font-size:clamp(43px,5.3vw,70px);line-height:1.08;margin:17px 0;letter-spacing:-2px}.grad{background:linear-gradient(90deg,#53c9ff,#a859ff,#f05ac9);-webkit-background-clip:text;color:transparent}.lead{color:#aaa6c5;line-height:1.9;font-size:16px;max-width:590px}.form{margin-top:25px;padding:10px;background:#ffffff06;border:1px solid var(--line);border-radius:22px;backdrop-filter:blur(18px)}.row{display:grid;grid-template-columns:1fr 1fr;gap:9px}.field{background:#05042299;border:1px solid var(--line);border-radius:15px;padding:6px 13px}.field label{display:block;color:#817d9b;font-size:10px}.field input{width:100%;border:0;outline:0;background:transparent;color:#fff;padding:8px 0;font-size:15px}.form .primary{width:100%;margin-top:9px}.privacy{text-align:center;color:#716d89;font-size:10px;padding-top:9px}.stats{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--line);border-radius:17px;margin-top:22px;background:#ffffff03}.stat{text-align:center;padding:13px 5px;border-left:1px solid var(--line)}.stat:last-child{border:0}.stat strong{display:block;font-size:19px}.stat span{font-size:9px;color:#77738e}.demo{border-radius:30px;padding:22px;position:relative;overflow:hidden;background:radial-gradient(circle at 15% 10%,#d449c83a,transparent 27%),radial-gradient(circle at 90% 75%,#5d47ff48,transparent 35%),linear-gradient(145deg,#101039,#2a155c,#11103b);border:1px solid #936cff45;box-shadow:0 35px 100px #0007}.demo:after{content:"";position:absolute;inset:10px;border:1px solid #ffd26733;border-radius:23px;pointer-events:none}.cardtop,.cardbottom{display:flex;justify-content:space-between;align-items:center;position:relative}.pill{background:#7b45e9;border-radius:999px;padding:5px 11px;font-size:10px}.center{text-align:center;padding:25px 12px 10px;position:relative}.name{color:var(--gold);font-size:42px;font-weight:900}.type{font-size:29px;font-weight:900;background:linear-gradient(90deg,#ffd66b,#fff,#d456f3);-webkit-background-clip:text;color:transparent}.desc{color:#d1ccdf;font-size:12px;line-height:1.9}.traits{background:#07062888;border:1px solid #fff1;border-radius:18px;padding:12px 16px;position:relative}.trait{margin:9px 0}.traitline{display:flex;justify-content:space-between;font-size:10px;color:#dcd8e8;margin-bottom:5px}.track{height:6px;border-radius:99px;background:#fff1;overflow:hidden}.fill{height:100%;background:linear-gradient(90deg,#7448ff,#d94cf3);border-radius:99px}.luck{display:flex;align-items:center;gap:13px;padding:13px;margin-top:13px;border:1px solid #ffd26738;border-radius:17px;background:#ffd26709}.lucknum{width:64px;height:64px;border:2px solid var(--gold);border-radius:50%;display:grid;place-items:center;font-weight:900;font-size:19px}.luck b{font-size:11px;color:#ffd56d}.luck p{font-size:9px;color:#aaa5bd;margin:3px 0;line-height:1.7}.qr{background:#fff;border-radius:8px;padding:6px;width:72px;height:72px}.qr>div{width:60px;height:60px}.cardbottom{margin-top:13px}.tiny{font-size:8px;color:#928da8;line-height:1.7}.section{padding:25px 0 70px}.section h2{text-align:center;font-size:29px;margin:0}.section .sub{text-align:center;color:#827e9a;font-size:11px;margin:5px 0 24px}.tools{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.tool{border:1px solid var(--line);border-radius:18px;background:#ffffff04;padding:20px}.tool .i{font-size:26px}.tool h3{font-size:14px;margin:10px 0 3px}.tool p{color:#817d98;font-size:10px;line-height:1.7;margin:0}.result{display:none;margin-bottom:70px}.resultbox{display:grid;grid-template-columns:1fr 450px;gap:24px;align-items:center;border:1px solid var(--line);border-radius:28px;background:#ffffff04;padding:22px}.resultcopy h2{font-size:42px;margin:10px 0}.resultcopy p{color:#aaa5c0;line-height:1.9}.actions2{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}.canvasbox{background:#08072b;border:1px solid #fff1;border-radius:22px;padding:9px}.canvasbox canvas{width:100%;display:block;border-radius:15px}.challenge{margin-top:20px;border:1px solid #9b75ff38;background:linear-gradient(100deg,#7448ff12,#df4cf312);padding:18px;border-radius:20px}.challenge b{font-size:16px}.challenge p{font-size:11px;margin:5px 0;color:#aaa6c2}.challenge button{margin-top:8px}.footer{border-top:1px solid var(--line);padding:28px 0 50px;color:#6f6b87;font-size:10px;text-align:center}
+.tool{cursor:pointer;transition:transform .18s ease,border-color .18s ease}.tool:hover{transform:translateY(-3px);border-color:#9b75ff55}
+.modalOverlay{position:fixed;inset:0;background:#05041ce6;backdrop-filter:blur(6px);z-index:200;display:none;align-items:center;justify-content:center;padding:18px}
+.modalOverlay.open{display:flex}
+.modalBox{width:min(520px,100%);max-height:88vh;overflow:auto;background:linear-gradient(160deg,#141138,#1c1650);border:1px solid #936cff45;border-radius:24px;padding:22px;position:relative;box-shadow:0 40px 100px #000a}
+.modalClose{position:absolute;inset-inline-start:14px;top:14px;background:#ffffff10;border:1px solid var(--line);border-radius:10px;width:30px;height:30px;color:#fff;font-size:15px;line-height:1}
+.modalBox h3{margin:0 30px 4px;font-size:19px}
+.modalBox .sub2{color:#a9a4c4;font-size:11px;margin:0 0 16px}
+.mfield{background:#05042299;border:1px solid var(--line);border-radius:14px;padding:10px 13px;margin-bottom:9px}
+.mfield label{display:block;color:#817d9b;font-size:10px;margin-bottom:3px}
+.mfield input{width:100%;border:0;outline:0;background:transparent;color:#fff;font-size:14px}
+.mbtn{width:100%;margin-top:4px}
+.chip{display:inline-block;border:1px solid var(--line);background:#ffffff08;border-radius:11px;padding:8px 12px;font-size:12px;margin:4px;cursor:pointer;transition:.15s}
+.chip.sel{background:linear-gradient(100deg,#6945ff,#a23de9);border-color:transparent}
+.qblock{margin-bottom:14px}.qblock b{font-size:12px;display:block;margin-bottom:6px;color:#e4e0f2}
+.mresult{margin-top:14px;padding:15px;border:1px solid #ffd26738;border-radius:16px;background:#ffd26709}
+.mresult h4{margin:0 0 6px;font-size:17px;background:linear-gradient(90deg,#ffd66b,#fff,#d456f3);-webkit-background-clip:text;color:transparent}
+.mresult p{font-size:12px;color:#d1ccdf;line-height:1.8;margin:0}
+.meter{height:9px;border-radius:99px;background:#fff1;overflow:hidden;margin:9px 0}
+.meter div{height:100%;background:linear-gradient(90deg,#7448ff,#d94cf3)}
+.letterBig{width:56px;height:56px;border:2px solid var(--gold);border-radius:16px;display:grid;place-items:center;font-size:26px;font-weight:900;color:var(--gold);float:inline-start;margin-inline-end:12px}
+@keyframes popIn{0%{opacity:0;transform:translateY(8px) scale(.97)}100%{opacity:1;transform:translateY(0) scale(1)}}
+.mresult{animation:popIn .45s cubic-bezier(.16,1,.3,1)}
+.shareRow{display:flex;gap:7px;margin-top:13px}
+.sBtn{flex:1;border:1px solid var(--line);background:#ffffff08;color:#fff;border-radius:11px;padding:9px 6px;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;gap:5px;transition:.15s}
+.sBtn:hover{background:#ffffff14;transform:translateY(-1px)}
+.sBtn.copied{background:linear-gradient(100deg,#6945ff,#a23de9);border-color:transparent}
+@media(max-width:900px){.nav{display:none}.hero{grid-template-columns:1fr;padding-top:40px}.tools{grid-template-columns:1fr 1fr}.resultbox{grid-template-columns:1fr}}
+.tsShort{display:none}
+@media(max-width:600px){.wrap{width:calc(100% - 18px)}.top{height:66px}.actions .primary{padding:9px 12px;border-radius:12px}.tsFull{display:none}.tsShort{display:inline}.hero{gap:30px}.hero h1{font-size:42px}.lead{font-size:14px}.row{grid-template-columns:1fr}.tools{grid-template-columns:1fr}.demo{padding:15px}.name{font-size:35px}.type{font-size:25px}.resultcopy h2{font-size:34px}}
+</style>
+</head>
+<body>
+<div id="pageLoader"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+<div class="wrap">
+<header class="top">
+ <div class="brand"><span class="mark">V</span> Veyra</div>
+ <nav class="nav"><a href="#">الرئيسية</a><a href="#tools">الأدوات</a><a href="#about">المزيد</a></nav>
+ <div class="actions"><button class="ghost" id="language">🌐 العربية</button><button class="primary" id="topShare"><span class="tsFull">شارك نتيجتك ↗</span><span class="tsShort">✨</span></button></div>
+</header>
+
+<section class="hero">
+<div>
+ <span class="eyebrow">✨ نتيجة مصممة لك</span>
+ <h1>اكتشف <span class="grad">شخصيتك</span><br>في أقل من 30 ثانية</h1>
+ <p class="lead">اكتب اسمك واحصل على قراءة ترفيهية فريدة تُولَّد من مدخلاتك. ثم شارك النتيجة أو تحدَّ بها أصدقاءك.</p>
+ <div class="form">
+  <div class="row">
+   <div class="field"><label>الاسم</label><input id="name" maxlength="40" placeholder="مثلاً: محمد"><small id="nameErr" style="display:none;color:#ff9b9b;font-size:9px"></small></div>
+   <div class="field"><label>تاريخ الميلاد <small>(اختياري)</small></label><input id="dob" type="date"></div>
+  </div>
+  <button class="primary" id="go">اعرف شخصيتك الآن ✨</button>
+  <div class="privacy">🛡️ لا نحتاج حسابًا • لا نحفظ الاسم أو تاريخ الميلاد في الخادم</div>
+ </div>
+ <div class="stats"><div class="stat"><strong>+125K</strong><span>نتيجة مكتشفة</span></div><div class="stat"><strong>+250K</strong><span>مشاركة</span></div><div class="stat"><strong>+50</strong><span>دولة</span></div></div>
+</div>
+
+<div>
+ <div class="demo">
+  <div class="cardtop"><b>Veyra<span style="color:#d94cf3">•</span></b><span class="pill">تحليل الشخصية</span></div>
+  <div class="center"><div class="desc">هذه هي شخصيتك بالتفصيل</div><div class="name" id="dName">محمد</div><div class="desc">شخصيتك باختصار</div><div class="type" id="dType">القائد الملهم</div><div class="desc" id="dDesc">لديك شخصية قيادية قوية وقدرة على التأثير في الآخرين. طموحك عالٍ ولا تحب التوقف حتى تصل إلى أهدافك.</div></div>
+  <div class="traits" id="dTraits"></div>
+  <div class="luck"><div class="lucknum" id="dLuck">87%</div><div><b>نسبة الحظ في حياتك</b><p id="dLuckText">حظك عالي جدًا هذا العام! قد تظهر أمامك فرصة جميلة عندما لا تتوقعها.</p></div></div>
+  <div class="cardbottom"><div class="tiny">تم الإنشاء بواسطة<br><strong style="font-size:15px;color:#fff">Veyra</strong><br>شارك فضولك مع الآخرين ✨</div><div class="qr"><div id="dQR"></div></div></div>
+ </div>
+ <div style="text-align:center;color:#6f6b89;font-size:9px;margin-top:9px">للترفيه والفضول فقط • ليس تقييمًا نفسيًا علميًا</div>
+</div>
+</section>
+
+<section class="result" id="result">
+ <div class="resultbox">
+  <div class="resultcopy">
+   <span class="eyebrow">🎉 نتيجتك جاهزة</span>
+   <h2 id="rType"></h2><p id="rDesc"></p><div id="rTraits"></div>
+   <div class="actions2"><button class="primary" id="download">تحميل البطاقة ↓</button><button class="ghost" id="copy">نسخ النتيجة</button><button class="ghost" id="whatsapp">واتساب</button><button class="ghost" id="share">مشاركة</button></div>
+   <div class="challenge"><b>👀 تحدَّ صديقك</b><p>أرسل له رابط نتيجتك وشوف هل نتيجته مختلفة عنك.</p><button class="primary" id="challenge">أرسل التحدي ↗</button></div>
+  </div>
+  <div class="canvasbox"><canvas id="canvas" width="900" height="1200"></canvas></div>
+ </div>
+</section>
+
+<section class="section" id="tools">
+<h2>اكتشف نفسك من زاوية أخرى</h2><div class="sub">أدوات Veyra ستكبر مع الوقت.</div>
+<div class="tools">
+ <div class="tool" data-tool="compat"><div class="i">❤️</div><h3>توافق بين اسمين</h3><p>هل أنت وصديقك متوافقان؟</p></div>
+ <div class="tool" data-tool="birth"><div class="i">🎂</div><h3>تحليل تاريخ الميلاد</h3><p>قراءة ترفيهية من تاريخ ميلادك.</p></div>
+ <div class="tool" data-tool="quiz"><div class="i">🎭</div><h3>أي شخصية أنت؟</h3><p>اختبار سريع وممتع.</p></div>
+ <div class="tool" data-tool="letter"><div class="i">🔤</div><h3>سر أول حرف</h3><p>ماذا يقول أول حرف من اسمك؟</p></div>
+</div>
+</section>
+<footer class="footer" id="about">Veyra © 2026 — فضول وترفيه حول العالم • خصوصية • شروط الاستخدام</footer>
+</div>
+
+<div class="modalOverlay" id="modalOverlay"><div class="modalBox" id="modalBox"></div></div>
+
+<script>
+const DATA={
+ar:{types:[
+["القائد الملهم","لديك شخصية قيادية قوية وقدرة على التأثير في الآخرين. عندما تؤمن بفكرة، يصعب أن تتخلى عنها.","القيادة","الإبداع"],
+["العقل الفضولي","تلاحظ تفاصيل قد يتجاوزها الآخرون، ودائمًا لديك سؤال إضافي. فضولك يدفعك نحو أفكار غير تقليدية.","الفضول","الإبداع"],
+["المغامر الحر","لا تحب المسارات المتوقعة. التجارب الجديدة تجذبك، وغالبًا ما تتعلم أفضل عندما تخوض التجربة بنفسك.","المغامرة","الجرأة"],
+["المراقب الهادئ","قد تبدو هادئًا، لكن عقلك يعمل باستمرار في الخلفية. تلتقط الأنماط وتفكر قبل أن تتصرف.","الهدوء","التركيز"],
+["الشرارة الاجتماعية","الناس والحوارات يمنحونك طاقة. تعرف كيف تجعل الجو أخف، وغالبًا يشعر الآخرون بالراحة معك.","الاجتماعية","الدفء"]
+],labels:["القيادة","الإبداع","الفضول","الهدوء","المغامرة"],luck:["الحظ يبدو في صفك. قد تظهر فرصة جميلة في وقت غير متوقع.","أفضل فرصك تأتي عندما تبادر بدل الانتظار. جرّب شيئًا جديدًا.","هناك مفاجأة لطيفة محتملة في الطريق، لكن القرار في النهاية بيدك."]},
+en:{types:[
+["The Inspiring Leader","You have a strong leadership instinct and a natural ability to influence others. When you believe in an idea, you rarely let go.","Leadership","Creative"],
+["The Curious Mind","You notice details others skip and always have one more question. Curiosity pushes you toward unusual ideas.","Curiosity","Creative"],
+["The Free Adventurer","Predictable paths are not your favorite. New experiences pull you forward and you learn by doing.","Adventure","Bold"],
+["The Quiet Observer","You may look calm, but your mind is constantly connecting patterns in the background.","Calm","Focused"],
+["The Social Spark","People and conversations recharge you. You know how to make a room feel lighter.","Social","Warm"]
+],labels:["Leadership","Creative","Curious","Calm","Adventure"],luck:["Luck seems to be on your side. A surprising opportunity may appear.","Your best opportunities arrive when you act instead of waiting.","A pleasant surprise may be ahead, but the choice is still yours."]}};
+
+const TOOLS={
+ar:{
+compatMsgs:[[0,40,"توافقكم يحتاج شغل وصبر، لكن أفضل الصداقات بتتبني بالوقت مش بالنسبة."],[40,65,"في توافق حقيقي بينكم، وبتكملوا بعض في حاجات وتختلفوا في حاجات — وده طبيعي جدًا."],[65,85,"توافق قوي! بتفهموا بعض بسرعة وبتضحكوا على نفس النكت."],[85,101,"توافق نادر 🔥 من النوع اللي بيخلي الناس تسأل «إنتوا اتعرفتوا إزاي؟»"]],
+weekday:[
+{d:"الأحد",trait:"البداية الجديدة",desc:"بتحب تبدأ حاجات جديدة وعندك طاقة تحفيز للي حواليك."},
+{d:"الاثنين",trait:"المنظّم",desc:"بتحب الترتيب والخطة، وده اللي بيخليك تنجز أكتر من غيرك."},
+{d:"الثلاثاء",trait:"العنيد بإيجابية",desc:"لما تقرر حاجة صعب تتراجع عنها، وده أحيانًا نقطة قوتك."},
+{d:"الأربعاء",trait:"الفضولي",desc:"بتسأل أسئلة كتير وبتحب تفهم الحاجات من جذورها."},
+{d:"الخميس",trait:"الاجتماعي",desc:"بتجمع الناس حواليك بسهولة وبتحب لحظات التجمع."},
+{d:"الجمعة",trait:"الحالم",desc:"عندك خيال واسع وبتشوف الحاجات من زاوية مختلفة عن غيرك."},
+{d:"السبت",trait:"الهادئ العميق",desc:"بتفكر قبل ما تتكلم، وأصدقاؤك بيثقوا في رأيك."}],
+quiz:{q:[
+{t:"لما يبقى قدامك قرار صعب...",o:[["بفكر لوحدي كويس قبل ما أقرر","q"],["بسأل ناس كتير رأيهم","s"],["بتصرف على إحساسي","a"],["بعمل خطة بخطوات واضحة","l"]]},
+{t:"وقت فراغك المفضّل...",o:[["أقرا أو أتعلم حاجة جديدة","q"],["أخرج مع صحابي","s"],["أجرب حاجة جديدة كليًا","a"],["أنظم حاجة في حياتي","l"]]},
+{t:"صحابك بيوصفوك إنك...",o:[["ملاحظ وهادي","q"],["خفيف دم وحضورك مميز","s"],["جريء ومقدامش يخاف","a"],["منظم وموثوق فيه","l"]]},
+{t:"أكتر حاجة تضايقك...",o:[["الكلام السطحي","q"],["الوحدة لفترة طويلة","s"],["الروتين المكرر","a"],["الفوضى وعدم التنظيم","l"]]}],
+res:{q:["العقل الفضولي","بتحب تفهم كل حاجة من جذورها، وعقلك دايمًا في وضع تحليل."],s:["الشرارة الاجتماعية","الناس بتحس بالراحة معاك، وطاقتك بتجمع اللي حواليك."],a:["المغامر الحر","بتكسر الروتين وبتحب تجرب قبل ما تحكم على أي حاجة."],l:["القائد المنظم","عندك رؤية واضحة وبتحول الفوضى لخطة قابلة للتنفيذ."]}},
+letters:{"ا":"البداية القوية — عندك حضور واضح من أول لحظة.","ب":"العمق الهادئ — بتفكر قبل ما تتكلم وكلامك ليه وزن.","ت":"الإصرار — لما تحدد هدفك صعب حد يوقفك.","ث":"الثبات — الناس بتثق فيك لأنك ما بتتغيرش بسهولة.","ج":"الجرأة — بتقول رأيك حتى لو مختلف عن الكل.","ح":"الحنية — قلبك كبير ودايمًا حاضر لمساعدة اللي حواليك.","خ":"الاستقلالية — بتحب تعتمد على نفسك وتاخد قراراتك بنفسك.","د":"الدقة — بتلاحظ تفاصيل بيفوتها غيرك.","ذ":"الذكاء الحاد — بتربط الأفكار بسرعة وتوصل لحلول مبتكرة.","ر":"الرومانسية — بتحس بالحاجات بعمق وبتقدّر اللحظات الصغيرة.","ز":"التميّز — مش بتحب تمشي زي الكل، وده سر جاذبيتك.","س":"السلاسة — بتتأقلم مع أي موقف بمرونة عالية.","ش":"الشغف — لما تحب حاجة بتعيشها بكل كيانك.","ص":"الصدق — بتقول الحقيقة حتى لو صعبة، وده بيخليك موثوق.","ض":"الضمير الحي — بتحاسب نفسك على أي غلطة صغيرة.","ط":"الطموح — دايمًا بتشوف الخطوة الجاية قبل ما توصل للي قدامك.","ظ":"الظهور بثقة — عندك حضور بيلفت الأنظار من غير ما تحاول.","ع":"العمق — بتفكر في أسئلة كبيرة مش بس في التفاصيل اليومية.","غ":"الغموض الجذّاب — الناس بتحب تكتشف شخصيتك أكتر.","ف":"الفطنة — بتلاحظ اللي غيرك مش بياخد باله منه.","ق":"القوة الهادئة — بتواجه الصعاب من غير ضجة.","ك":"الكرم — بتحب تدي أكتر ما تاخد.","ل":"اللطف — وجودك بيريح اللي حواليك.","م":"المثابرة — مش بتستسلم بسهولة مهما الظروف صعبة.","ن":"النور — بتنشر طاقة إيجابية في المكان اللي فيه.","ه":"الهدوء الداخلي — بتاخد قرارك براحة من غير استعجال.","و":"الوفاء — علاقاتك بتفضل قوية لأنك بتحافظ عليها.","ي":"اليقين — عندك ثقة هادئة في نفسك وفي طريقك."}},
+en:{compatMsgs:[[0,40,"Your bond takes patience — the best friendships build over time, not stats."],[40,65,"There's real compatibility here, with just enough differences to keep it interesting."],[65,85,"Strong compatibility! You get each other fast and laugh at the same things."],[85,101,"Rare-level compatibility 🔥 the kind that makes people ask how you met."]],
+weekday:[
+{d:"Sunday",trait:"The Fresh Start",desc:"You love beginning new things and bring energizing momentum to others."},
+{d:"Monday",trait:"The Organizer",desc:"Structure and planning are your edge — it's why you get more done."},
+{d:"Tuesday",trait:"The Positive Stubborn",desc:"Once you decide something, it's hard to move you — often a strength."},
+{d:"Wednesday",trait:"The Curious One",desc:"You ask a lot of questions and love understanding root causes."},
+{d:"Thursday",trait:"The Connector",desc:"You gather people easily and love shared moments."},
+{d:"Friday",trait:"The Dreamer",desc:"You have wide imagination and see things from unusual angles."},
+{d:"Saturday",trait:"The Quiet Depth",desc:"You think before speaking, and people trust your judgment."}],
+quiz:{q:[
+{t:"Facing a tough decision, you...",o:[["Think it through alone first","q"],["Ask people you trust","s"],["Go with your gut","a"],["Make a clear step-by-step plan","l"]]},
+{t:"Your favorite way to spend free time...",o:[["Read or learn something new","q"],["Hang out with friends","s"],["Try something totally new","a"],["Organize something in your life","l"]]},
+{t:"Friends would describe you as...",o:[["Observant and calm","q"],["Fun and easy to be around","s"],["Bold and fearless","a"],["Reliable and organized","l"]]},
+{t:"What bothers you most...",o:[["Shallow small talk","q"],["Being alone too long","s"],["Repetitive routine","a"],["Disorganization and chaos","l"]]}],
+res:{q:["The Curious Mind","You love understanding things from the root, always analyzing."],s:["The Social Spark","People feel at ease with you, and your energy pulls others in."],a:["The Free Adventurer","You break routine and try things before judging them."],l:["The Organized Leader","You have a clear vision and turn chaos into a workable plan."]}},
+letters:{"a":"Strong Start — you carry a clear presence from the first moment.","b":"Quiet Depth — you think before speaking and your words carry weight.","c":"Persistence — once you set a goal, little stops you.","d":"Precision — you notice details others miss.","e":"Sharp Mind — you connect ideas fast and land on creative solutions.","f":"Passion — when you love something, you live it fully.","g":"Generosity — you give more than you take.","h":"Warmth — your presence puts people at ease.","i":"Certainty — you carry a calm confidence in your path.","j":"Boldness — you speak your mind even when it differs.","k":"Kindness — you're the first to help.","l":"Loyalty — your relationships stay strong because you tend to them.","m":"Perseverance — you rarely give up, no matter how hard it gets.","n":"Light — you bring positive energy wherever you are.","o":"Openness — you adapt easily to new situations.","p":"Ambition — you're already eyeing the next step.","q":"Curiosity — you ask big questions, not just small ones.","r":"Romance — you feel things deeply and value small moments.","s":"Smoothness — you adjust to any situation with ease.","t":"Ambition — you always see the next step before you get here.","u":"Uniqueness — you don't follow the crowd, and that's your charm.","v":"Vision — you think in big questions, not just daily details.","w":"Wit — you notice what others overlook.","x":"Mystery — people want to learn more about you.","y":"Yield of calm — you decide without rushing.","z":"Zeal — you rarely give up no matter the odds."}}
+};
+
+let lang="ar",current=null;
+window.addEventListener("load",()=>{document.body.classList.add("ready");let l=document.querySelector("#pageLoader");if(l){l.classList.add("hide");setTimeout(()=>l.remove(),450)}});
+setTimeout(()=>document.body.classList.add("ready"),1200);
+
+function hash(s){let h=2166136261;for(const c of [...s]){h^=c.codePointAt(0);h=Math.imul(h,16777619)}return h>>>0}
+function rng(seed){return()=>{seed|=0;seed=seed+0x6D2B79F5|0;let t=Math.imul(seed^seed>>>15,1|seed);t^=t+Math.imul(t^t>>>7,61|t);return((t^t>>>14)>>>0)/4294967296}}
+function pick(a,r){return a[Math.floor(r()*a.length)]}
+function slug(n,d){return (hash((n+"|"+d).toLowerCase()).toString(36)+hash((d+"|"+n).toLowerCase()).toString(36)).slice(0,10)}
+function make(n,d){let r=rng(hash((n+"|"+d).toLowerCase())),D=DATA[lang],t=pick(D.types,r),v={};D.labels.forEach(x=>v[x]=55+Math.floor(r()*43));v[t[2]]=Math.max(v[t[2]],83);v[t[3]]=Math.max(v[t[3]],77);return{name:n,title:t[0],desc:t[1],v,luck:65+Math.floor(r()*35),luckText:pick(D.luck,r),id:slug(n,d)}}
+function resultURL(id){return location.origin+location.pathname+"#r="+id}
+function saveState(r){localStorage.setItem("veyra:"+r.id,JSON.stringify(r))}
+function loadState(id){try{return JSON.parse(localStorage.getItem("veyra:"+id))}catch(e){return null}}
+function qr(el,url,size=60){el.innerHTML="";new QRCode(el,{text:url,width:size,height:size,colorDark:"#111",colorLight:"#fff",correctLevel:QRCode.CorrectLevel.M})}
+function render(r){current=r;saveState(r);const url=resultURL(r.id);document.querySelector("#dName").textContent=r.name;document.querySelector("#dType").textContent=r.title;document.querySelector("#dDesc").textContent=r.desc;document.querySelector("#dLuck").textContent=r.luck+"%";document.querySelector("#dLuckText").textContent=r.luckText;document.querySelector("#dTraits").innerHTML=DATA[lang].labels.map(x=>`<div class="trait"><div class="traitline"><span>${x}</span><b>${r.v[x]}%</b></div><div class="track"><div class="fill" style="width:${r.v[x]}%"></div></div></div>`).join("");qr(document.querySelector("#dQR"),url,60);document.querySelector("#rType").textContent=r.title;document.querySelector("#rDesc").textContent=r.desc;document.querySelector("#rTraits").innerHTML=DATA[lang].labels.map(x=>`<div class="trait"><div class="traitline"><span>${x}</span><b>${r.v[x]}%</b></div><div class="track"><div class="fill" style="width:${r.v[x]}%"></div></div></div>`).join("");draw(r,url);document.querySelector("#result").style.display="block";setTimeout(()=>document.querySelector("#result").scrollIntoView({behavior:"smooth"}),50)}
+function draw(r,url){const c=document.querySelector("#canvas"),x=c.getContext("2d"),W=c.width,H=c.height;x.clearRect(0,0,W,H);let g=x.createLinearGradient(0,0,W,H);g.addColorStop(0,"#09072d");g.addColorStop(.55,"#32165f");g.addColorStop(1,"#0d0b3b");x.fillStyle=g;x.fillRect(0,0,W,H);for(let i=0;i<45;i++){x.beginPath();x.arc((hash(r.name)+i*91)%W,(hash(r.title)+i*139)%H,1+i%3,0,7);x.fillStyle="rgba(255,255,255,.15)";x.fill()}x.strokeStyle="#ffd26755";x.lineWidth=2;x.strokeRect(25,25,W-50,H-50);x.textAlign="right";x.direction=lang==="ar"?"rtl":"ltr";x.fillStyle="#fff";x.font="900 42px Cairo";x.fillText("Veyra",W-60,85);x.fillStyle="#bcb6d3";x.font="500 22px Cairo";x.fillText(lang==="ar"?"تحليل شخصيتك":"PERSONALITY SNAPSHOT",W-60,130);x.fillStyle="#ffd267";x.font="900 68px Cairo";x.fillText(r.name,W-60,220);x.fillStyle="#fff";x.font="900 43px Cairo";x.fillText(r.title,W-60,300);x.fillStyle="#d5d0e4";x.font="400 25px Cairo";wrap(x,r.desc,W-60,355,W-120,42);DATA[lang].labels.forEach((l,i)=>{let y=535+i*75;x.fillStyle="#ddd8e8";x.font="600 21px Cairo";x.fillText(l,W-60,y);x.fillStyle="#ffffff18";x.fillRect(90,y+14,W-150,10);x.fillStyle="#b84ff0";x.fillRect(90,y+14,(W-150)*r.v[l]/100,10);x.fillStyle="#fff";x.font="700 20px Inter";x.fillText(r.v[l]+"%",W-60,y+2)});x.fillStyle="#ffd267";x.font="800 24px Cairo";x.fillText(lang==="ar"?"نسبة الحظ":"Luck score",W-60,940);x.fillStyle="#fff";x.font="900 54px Inter";x.fillText(r.luck+"%",W-60,1000);x.fillStyle="#aaa5bf";x.font="400 19px Cairo";x.fillText(lang==="ar"?"للترفيه والفضول فقط":"For entertainment only",W-60,1145);let holder=document.createElement("div");holder.style.position="fixed";holder.style.left="-9999px";document.body.appendChild(holder);new QRCode(holder,{text:url,width:150,height:150,colorDark:"#111",colorLight:"#fff"});setTimeout(()=>{let im=holder.querySelector("img")||holder.querySelector("canvas");x.fillStyle="#fff";x.fillRect(60,1015,170,170);if(im)x.drawImage(im,70,1025,150,150);holder.remove()},100)}
+function wrap(x,t,ax,y,max,lh){let a=t.split(/\s+/),line="",lines=[];for(const w of a){let q=line?line+" "+w:w;if(x.measureText(q).width>max&&line){lines.push(line);line=w}else line=q}if(line)lines.push(line);lines.slice(0,4).forEach((z,i)=>x.fillText(z,ax,y+i*lh))}
+const NAME_RE=/^[\u0600-\u06FFa-zA-Z\s'-]{2,40}$/;
+function nameError(n){if(!n)return lang==="ar"?"اكتب اسمك الأول عشان تبدأ":"Enter your name to get started";if(!NAME_RE.test(n))return lang==="ar"?"الاسم لازم يكون حروف بس (بدون أرقام أو رموز)":"Name can only contain letters (no numbers or symbols)";return null}
+function generate(){let nameEl=document.querySelector("#name"),fieldEl=nameEl.closest(".field"),errEl=document.querySelector("#nameErr"),n=nameEl.value.trim(),d=document.querySelector("#dob").value,err=nameError(n);if(err){errEl.textContent=err;errEl.style.display="block";fieldEl.style.borderColor="#ff6b6b88";nameEl.focus();return}errEl.style.display="none";fieldEl.style.borderColor="";render(make(n,d))}
+document.querySelector("#name").addEventListener("input",()=>{document.querySelector("#nameErr").style.display="none";document.querySelector("#name").closest(".field").style.borderColor=""});
+document.querySelector("#go").onclick=generate;document.querySelector("#name").onkeydown=e=>{if(e.key==="Enter")generate()};
+document.querySelector("#download").onclick=()=>{setTimeout(()=>{let a=document.createElement("a");a.download="veyra-result.png";a.href=document.querySelector("#canvas").toDataURL("image/png");a.click()},120)};
+document.querySelector("#copy").onclick=async()=>{if(!current)return;await navigator.clipboard.writeText(`${current.name} — ${current.title}\n${current.desc}\n${resultURL(current.id)}`);document.querySelector("#copy").textContent="تم النسخ ✓";setTimeout(()=>document.querySelector("#copy").textContent="نسخ النتيجة",1300)};
+document.querySelector("#whatsapp").onclick=()=>{if(current)window.open("https://wa.me/?text="+encodeURIComponent(`نتيجتي على Veyra: ${current.title} ✨\n${resultURL(current.id)}`),"_blank")};
+document.querySelector("#share").onclick=async()=>{if(!current)return;let u=resultURL(current.id);if(navigator.share)await navigator.share({title:"نتيجتي على Veyra",text:`${current.name} — ${current.title}`,url:u});else{await navigator.clipboard.writeText(u);alert("تم نسخ الرابط")}};
+document.querySelector("#challenge").onclick=()=>{if(current){let u=resultURL(current.id)+"&challenge=1";if(navigator.share)navigator.share({title:"تحدي Veyra",text:`أنا حصلت على «${current.title}». دورك الآن 👀`,url:u});else navigator.clipboard.writeText(`أنا حصلت على «${current.title}». دورك الآن 👀 ${u}`)}};
+document.querySelector("#topShare").onclick=()=>document.querySelector("#result").style.display==="block"?document.querySelector("#share").click():document.querySelector("#name").focus();
+document.querySelector("#language").onclick=()=>{lang=lang==="ar"?"en":"ar";document.documentElement.lang=lang;document.documentElement.dir=lang==="ar"?"rtl":"ltr";document.querySelector("#language").textContent=lang==="ar"?"🌐 العربية":"🌐 English";if(lang==="en"){document.querySelector("h1").innerHTML='Discover your <span class="grad">personality</span><br>in under 30 seconds';document.querySelector(".lead").textContent="Enter your name and get a playful personality reading generated for you. Share it or challenge your friends.";document.querySelector("#name").placeholder="e.g. Alex";document.querySelector("#go").textContent="Reveal my personality ✨"}else{document.querySelector("h1").innerHTML='اكتشف <span class="grad">شخصيتك</span><br>في أقل من 30 ثانية';document.querySelector(".lead").textContent="اكتب اسمك واحصل على قراءة ترفيهية فريدة تُولَّد من مدخلاتك. ثم شارك النتيجة أو تحدَّ بها أصدقاءك.";document.querySelector("#name").placeholder="مثلاً: محمد";document.querySelector("#go").textContent="اعرف شخصيتك الآن ✨"}if(current){let n=current.name,d=document.querySelector("#dob").value;render(make(n,d))}};
+function openModal(html){document.querySelector("#modalBox").innerHTML=`<button class="modalClose" id="modalClose">✕</button>${html}`;document.querySelector("#modalOverlay").classList.add("open");document.querySelector("#modalClose").onclick=closeModal}
+function closeModal(){document.querySelector("#modalOverlay").classList.remove("open")}
+document.querySelector("#modalOverlay").addEventListener("click",e=>{if(e.target.id==="modalOverlay")closeModal()});
+
+function shareRowHTML(){
+return `<div class="shareRow">
+<button class="sBtn" data-act="copy">${lang==="ar"?"📋 نسخ":"📋 Copy"}</button>
+<button class="sBtn" data-act="wa">💬 WhatsApp</button>
+<button class="sBtn" data-act="share">${lang==="ar"?"↗ مشاركة":"↗ Share"}</button>
+</div>`;
+}
+function attachShareRow(root,text){
+let url=location.origin+location.pathname;
+let full=text+"\n"+url;
+root.querySelector('[data-act="copy"]').onclick=async e=>{
+await navigator.clipboard.writeText(full);
+let b=e.currentTarget,old=b.textContent;b.textContent=lang==="ar"?"✓ تم النسخ":"✓ Copied";b.classList.add("copied");
+setTimeout(()=>{b.textContent=old;b.classList.remove("copied")},1300);
+};
+root.querySelector('[data-act="wa"]').onclick=()=>window.open("https://wa.me/?text="+encodeURIComponent(full),"_blank");
+root.querySelector('[data-act="share"]').onclick=async()=>{
+if(navigator.share)await navigator.share({title:"Veyra",text,url});
+else{await navigator.clipboard.writeText(full);alert(lang==="ar"?"تم نسخ الرابط":"Link copied")}
+};
+}
+
+function openCompat(){
+openModal(`<h3>${lang==="ar"?"توافق بين اسمين":"Name Compatibility"}</h3><p class="sub2">${lang==="ar"?"اكتب اسمك واسم صاحبك واعرف نسبة توافقكم":"Enter both names to see your compatibility"}</p>
+<div class="mfield"><label>${lang==="ar"?"اسمك":"Your name"}</label><input id="cN1" maxlength="30"></div>
+<div class="mfield"><label>${lang==="ar"?"اسم التاني":"Their name"}</label><input id="cN2" maxlength="30"></div>
+<button class="primary mbtn" id="cGo">${lang==="ar"?"احسب التوافق":"Calculate"}</button>
+<div id="cOut"></div>`);
+document.querySelector("#cGo").onclick=()=>{
+let n1=document.querySelector("#cN1").value.trim(),n2=document.querySelector("#cN2").value.trim();
+if(!n1||!n2)return;
+let pct=50+hash(n1.toLowerCase()+"|"+n2.toLowerCase())%50;
+let msg=TOOLS[lang].compatMsgs.find(m=>pct>=m[0]&&pct<m[1])[2];
+let shareText=lang==="ar"?`نسبة التوافق بين ${n1} و${n2}: ${pct}% ✨ جرّب توافقك على Veyra`:`Compatibility between ${n1} & ${n2}: ${pct}% ✨ Try yours on Veyra`;
+let out=document.querySelector("#cOut");
+out.innerHTML=`<div class="mresult"><h4>${pct}%</h4><div class="meter"><div style="width:${pct}%"></div></div><p>${msg}</p>${shareRowHTML()}</div>`;
+attachShareRow(out,shareText);
+};
+}
+
+function openBirth(){
+openModal(`<h3>${lang==="ar"?"تحليل تاريخ الميلاد":"Birthdate Reading"}</h3><p class="sub2">${lang==="ar"?"اختار تاريخ ميلادك واعرف قراءتك":"Pick your birthdate to see your reading"}</p>
+<div class="mfield"><label>${lang==="ar"?"تاريخ الميلاد":"Birthdate"}</label><input id="bD" type="date"></div>
+<button class="primary mbtn" id="bGo">${lang==="ar"?"اقرأ تاريخ ميلادي":"Reveal my reading"}</button>
+<div id="bOut"></div>`);
+document.querySelector("#bGo").onclick=()=>{
+let v=document.querySelector("#bD").value;if(!v)return;
+let dow=new Date(v+"T12:00:00").getDay();
+let r=TOOLS[lang].weekday[dow];
+let shareText=lang==="ar"?`قراءة تاريخ ميلادي على Veyra: ${r.trait} ✨`:`My Veyra birthdate reading: ${r.trait} ✨`;
+let out=document.querySelector("#bOut");
+out.innerHTML=`<div class="mresult"><h4>${r.trait}</h4><p>${lang==="ar"?"من مواليد "+r.d:"Born on "+r.d}</p><p>${r.desc}</p>${shareRowHTML()}</div>`;
+attachShareRow(out,shareText);
+};
+}
+
+function openQuiz(){
+let qs=TOOLS[lang].quiz.q,ans={};
+let qhtml=qs.map((q,i)=>`<div class="qblock"><b>${q.t}</b>${q.o.map((o,j)=>`<span class="chip" data-q="${i}" data-v="${o[1]}">${o[0]}</span>`).join("")}</div>`).join("");
+openModal(`<h3>${lang==="ar"?"أي شخصية أنت؟":"Which type are you?"}</h3><p class="sub2">${lang==="ar"?"اختار إجابة لكل سؤال":"Pick one answer per question"}</p>${qhtml}<button class="primary mbtn" id="quizGo">${lang==="ar"?"شوف نتيجتي":"See my result"}</button><div id="quizOut"></div>`);
+document.querySelectorAll(".chip").forEach(c=>c.onclick=()=>{
+let q=c.dataset.q;
+document.querySelectorAll(`.chip[data-q="${q}"]`).forEach(x=>x.classList.remove("sel"));
+c.classList.add("sel");ans[q]=c.dataset.v;
+});
+document.querySelector("#quizGo").onclick=()=>{
+if(Object.keys(ans).length<qs.length)return;
+let tally={};Object.values(ans).forEach(v=>tally[v]=(tally[v]||0)+1);
+let top=Object.entries(tally).sort((a,b)=>b[1]-a[1])[0][0];
+let r=TOOLS[lang].quiz.res[top];
+let shareText=lang==="ar"?`نتيجتي في اختبار الشخصية على Veyra: ${r[0]} 🎭`:`My Veyra personality result: ${r[0]} 🎭`;
+let out=document.querySelector("#quizOut");
+out.innerHTML=`<div class="mresult"><h4>${r[0]}</h4><p>${r[1]}</p>${shareRowHTML()}</div>`;
+attachShareRow(out,shareText);
+};
+}
+
+function openLetter(){
+openModal(`<h3>${lang==="ar"?"سر أول حرف":"First Letter Secret"}</h3><p class="sub2">${lang==="ar"?"اكتب اسمك واعرف سر أول حرف فيه":"Enter your name to unlock your first letter"}</p>
+<div class="mfield"><label>${lang==="ar"?"اسمك":"Your name"}</label><input id="lN" maxlength="30"></div>
+<button class="primary mbtn" id="lGo">${lang==="ar"?"اكشف السر":"Reveal"}</button>
+<div id="lOut"></div>`);
+document.querySelector("#lGo").onclick=()=>{
+let n=document.querySelector("#lN").value.trim();if(!n)return;
+let ch=n[0].toLowerCase();
+let meaning=TOOLS[lang].letters[ch]||TOOLS[lang].letters[lang==="ar"?"ا":"a"];
+let shareText=lang==="ar"?`سر حرف ${n[0]} من اسمي على Veyra 🔤`:`The secret of letter ${n[0].toUpperCase()} in my name on Veyra 🔤`;
+let out=document.querySelector("#lOut");
+out.innerHTML=`<div class="mresult"><div class="letterBig">${n[0].toUpperCase()}</div><p>${meaning}</p><div style="clear:both"></div>${shareRowHTML()}</div>`;
+attachShareRow(out,shareText);
+};
+}
+
+document.querySelectorAll(".tool").forEach(t=>t.onclick=()=>{
+let k=t.dataset.tool;
+if(k==="compat")openCompat();else if(k==="birth")openBirth();else if(k==="quiz")openQuiz();else if(k==="letter")openLetter();
+});
+
+(function boot(){let m=location.hash.match(/^#r=([a-z0-9]+)$/i);if(m){let r=loadState(m[1]);if(r){document.querySelector("#name").value=r.name;render(r)}}else{let demo=make("محمد","2000-08-15");document.querySelector("#dName").textContent=demo.name;document.querySelector("#dType").textContent=demo.title;document.querySelector("#dDesc").textContent=demo.desc;document.querySelector("#dLuck").textContent=demo.luck+"%";document.querySelector("#dLuckText").textContent=demo.luckText;document.querySelector("#dTraits").innerHTML=DATA[lang].labels.map(x=>`<div class="trait"><div class="traitline"><span>${x}</span><b>${demo.v[x]}%</b></div><div class="track"><div class="fill" style="width:${demo.v[x]}%"></div></div></div>`).join("");qr(document.querySelector("#dQR"),location.href.split("#")[0],60)}})();
+</script>
+</body>
+</html>
